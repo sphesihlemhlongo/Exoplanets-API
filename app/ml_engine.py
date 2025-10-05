@@ -28,7 +28,7 @@ try:
     scaler = joblib.load(SCALER_PATH)
     logger.info("✅ Loaded pretrained model and scaler.")
 except Exception as e:
-    logger.error(f"❌ Failed to load model: {e}")
+    logger.error(f"Failed to load model: {e}")
     model, scaler = None, None
 
 # 🧹 Placeholder for teammate's data cleaning function
